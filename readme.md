@@ -13,6 +13,7 @@
 		* text domain in
 			* phpcs.xml.dist
 			* Dummy.php
+		* launch.json: pathMappings
 1. Run composer install
 1. Run npm install
 
