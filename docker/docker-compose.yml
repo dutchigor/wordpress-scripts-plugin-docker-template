@@ -3,8 +3,6 @@ version: '3'
 services:
   db:
     image: mariadb:latest
-    # container_name: ${PROJECT_NAME}-DB
-    # restart: always
     env_file:
       - ../docker.env
     ports:
@@ -17,10 +15,8 @@ services:
     build:
       context: .
       dockerfile: wp.Dockerfile
-    # container_name: ${PROJECT_NAME}-WP
     depends_on:
       - db
-    restart: always
     env_file:
       - ../docker.env
     environment:

@@ -9,7 +9,7 @@
     "watch": "wp-scripts start",
     "dockerup": "docker compose --env-file docker.env --file ./docker/docker-compose.yml up",
     "dockerdown": "docker compose --env-file docker.env --file ./docker/docker-compose.yml down",
-    "wp": "docker compose --env-file docker.env --file ./docker/docker-compose.yml run wordpress wp"
+    "wp": "docker compose --env-file docker.env --file ./docker/docker-compose.yml exec wordpress wp"
   },
   "keywords": [
     "wordpress",
